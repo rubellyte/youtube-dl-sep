@@ -23,15 +23,15 @@ Programming language: Python
 <The following is supposed to be repeated for each group member>
 
 <Group member name>
-
+Nikitas Konstantopoulos
 <Function 1 name>
-
+get_base_url
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 
 <Provide a screenshot of the coverage results output by the instrumentation>
 
 <Function 2 name>
-
+get_suitable_downloader
 <Provide the same kind of information provided for Function 1>
 
 ## Coverage improvement
@@ -43,7 +43,7 @@ Programming language: Python
 <Group member name>
 
 <Test 1>
-
+test_get_base_url
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
@@ -53,7 +53,7 @@ Programming language: Python
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
 
 <Test 2>
-
+test_get_suitable_downloader
 <Provide the same kind of information provided for Test 1>
 
 ### Overall
