@@ -22,31 +22,36 @@ Programming language: Python
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name>
-Nikitas Konstantopoulos
-<Function 1 name>
-get_base_url
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
-
-<Provide a screenshot of the coverage results output by the instrumentation>
-
-<Function 2 name>
-get_suitable_downloader
-<Provide the same kind of information provided for Function 1>
-
 #### Jordan Smith
 
-formatSeconds: [Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/c11880381c947136ba251914cf5b943dfa331675)
+**Function 1: formatSeconds**
+
+[Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/c11880381c947136ba251914cf5b943dfa331675)
 
 Result from existing tests:
 
 ![Instrumentation result from existing tests](coverage_format_seconds_before.png)
 
-format_bytes: [Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/9a24bc632543ca3642759776b3113a0989fccc6a)
+**Function 2: format_bytes**
+
+[Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/9a24bc632543ca3642759776b3113a0989fccc6a)
 
 Result from existing tests:
 
 ![Instrumentation result from existing tests](coverage_format_bytes_before.png)
+
+#### Nikitas Konstantopoulos
+
+**Function 1: get_base_url**
+
+[Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/fe2c02649b2105fcf4fe2cfa45de8182aa6f23e4)
+
+Old Coverage Results:
+![Initial coverage for f4m.py](inital_coverage_f4m.png)
+
+**Function 2: get_suitable_downloader**
+
+[Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/fe2c02649b2105fcf4fe2cfa45de8182aa6f23e4)
 
 ## Coverage improvement
 
@@ -54,25 +59,11 @@ Result from existing tests:
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name>
-
-<Test 1>
-test_get_base_url
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
-
-<Provide a screenshot of the old coverage results (the same as you already showed above)>
-
-<Provide a screenshot of the new coverage results>
-
-<State the coverage improvement with a number and elaborate on why the coverage is improved>
-
-<Test 2>
-test_get_suitable_downloader
-<Provide the same kind of information provided for Test 1>
-
 #### Jordan Smith
 
-TestFormatSeconds: [New tests](https://github.com/rubellyte/youtube-dl-sep/commit/2a1cfe97089a3b40f4b36de4784cba7fcf5add2a)
+**Test 1: TestFormatSeconds**
+
+[New tests](https://github.com/rubellyte/youtube-dl-sep/commit/2a1cfe97089a3b40f4b36de4784cba7fcf5add2a)
 
 Before:
 
@@ -82,7 +73,9 @@ After:
 
 ![Instrumentation result from new tests](coverage_format_seconds_after.png)
 
-TestFormatBytes: [New tests](https://github.com/rubellyte/youtube-dl-sep/commit/f9d8f719a5c0a8c13c8a63223d5db1d28681628d)
+**Test 2: TestFormatBytes**
+
+[New tests](https://github.com/rubellyte/youtube-dl-sep/commit/f9d8f719a5c0a8c13c8a63223d5db1d28681628d)
 
 Before:
 
@@ -92,12 +85,31 @@ After:
 
 ![Instrumentation result from new tests](coverage_format_bytes_after.png)
 
+#### Nikitas Konstantopoulos
+
+**Test 1: test_get_base_url**
+
+[New/enhanced test](https://github.com/rubellyte/youtube-dl-sep/commit/4608aad7a7522b296174b4c56d66adfac6fc20ee)
+
+Old Coverage Results:
+![Initial coverage for f4m.py](inital_coverage_f4m.png)
+
+New Coverage Results:
+![Renewed coverage for f4m.py](final_coverage_f4m.png)
+
+**Test 2: test_get_suitable_downloader**
+
+[New/enhanced test](https://github.com/rubellyte/youtube-dl-sep/commit/4608aad7a7522b296174b4c56d66adfac6fc20ee)
+
+## Coverage improvement
 
 ### Overall
 
-<Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)>
+Old Coverage Results of __init__.py:
+![Initial coverage for __init__.py](inital_coverage_init_.png)
 
-<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group>
+New Coverage Results of __init__.py:
+![Renewed coverage for __init__.py](final_coverage_init_.png)
 
 ## Statement of individual contributions
 
