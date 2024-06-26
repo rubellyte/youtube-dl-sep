@@ -105,12 +105,6 @@ New Coverage Results:
 
 ### Overall
 
-Old Coverage Results of __init__.py:
-![Initial coverage for __init__.py](inital_coverage_init_.png)
-
-New Coverage Results of __init__.py:
-![Renewed coverage for __init__.py](final_coverage_init_.png)
-
 
 ## Statement of individual contributions
 
