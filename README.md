@@ -34,6 +34,20 @@ get_base_url
 get_suitable_downloader
 <Provide the same kind of information provided for Function 1>
 
+#### Jordan Smith
+
+formatSeconds: [Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/c11880381c947136ba251914cf5b943dfa331675)
+
+Result from existing tests:
+
+![Instrumentation result from existing tests](coverage_format_seconds_before.png)
+
+format_bytes: [Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/9a24bc632543ca3642759776b3113a0989fccc6a)
+
+Result from existing tests:
+
+![Instrumentation result from existing tests](coverage_format_bytes_before.png)
+
 ## Coverage improvement
 
 ### Individual tests
@@ -55,6 +69,29 @@ test_get_base_url
 <Test 2>
 test_get_suitable_downloader
 <Provide the same kind of information provided for Test 1>
+
+#### Jordan Smith
+
+TestFormatSeconds: [New tests](https://github.com/rubellyte/youtube-dl-sep/commit/2a1cfe97089a3b40f4b36de4784cba7fcf5add2a)
+
+Before:
+
+![Instrumentation result from existing tests](coverage_format_seconds_before.png)
+
+After:
+
+![Instrumentation result from new tests](coverage_format_seconds_after.png)
+
+TestFormatBytes: [New tests](https://github.com/rubellyte/youtube-dl-sep/commit/f9d8f719a5c0a8c13c8a63223d5db1d28681628d)
+
+Before:
+
+![Instrumentation result from existing tests](coverage_format_bytes_before.png)
+
+After:
+
+![Instrumentation result from new tests](coverage_format_bytes_after.png)
+
 
 ### Overall
 
