@@ -2324,13 +2324,21 @@ def decodeOption(optval):
         return optval
     return _decode_compat_str(optval)
 
+formatSeconds_branch_coverage = {
+    "more_than_hour": False,
+    "between_minute_and_hour": False,
+    "less_than_minute": False
+}
 
 def formatSeconds(secs):
     if secs > 3600:
+        formatSeconds_branch_coverage["more_than_hour"] = True
         return '%d:%02d:%02d' % (secs // 3600, (secs % 3600) // 60, secs % 60)
     elif secs > 60:
+        formatSeconds_branch_coverage['between_minute_and_hour'] = True
         return '%d:%02d' % (secs // 60, secs % 60)
     else:
+        formatSeconds_branch_coverage['less_than_minute'] = True
         return '%d' % secs
 
 

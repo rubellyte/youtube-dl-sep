@@ -112,6 +112,7 @@ from youtube_dl.utils import (
     cli_valueless_option,
     cli_bool_option,
     YoutubeDLHandler,
+    formatSeconds_branch_coverage
 )
 from youtube_dl.compat import (
     compat_chr,
@@ -125,6 +126,16 @@ from youtube_dl.compat import (
 
 
 class TestUtil(unittest.TestCase):
+
+    def setUp(self):
+        formatSeconds_branch_coverage.update({
+            "more_than_hour": False,
+            "between_minute_and_hour": False,
+            "less_than_minute": False
+        })
+
+    def tearDown(self):
+        print(formatSeconds_branch_coverage)
 
     def test_timeconvert(self):
         self.assertTrue(timeconvert('') is None)
@@ -1680,3 +1691,4 @@ Line 1
 
 if __name__ == '__main__':
     unittest.main()
+    print(formatSeconds_branch_coverage)
