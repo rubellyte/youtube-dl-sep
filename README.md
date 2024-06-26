@@ -80,11 +80,9 @@ New Coverage Results:     ![Renewed coverage for __init__.py](final_coverage_ini
 
 <Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)>
 
-Old Coverage Results of __init__.py:     ![Initial coverage for __init__.py](inital_coverage_init_.png)    
 
 <Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group>
 
-New Coverage Results of __init__.py:     ![Renewed coverage for __init__.py](final_coverage_init_.png)    
 
 ## Statement of individual contributions
 
