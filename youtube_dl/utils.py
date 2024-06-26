@@ -2324,13 +2324,21 @@ def decodeOption(optval):
         return optval
     return _decode_compat_str(optval)
 
+formatSeconds_branch_coverage = {
+    "more_than_hour": False,
+    "between_minute_and_hour": False,
+    "less_than_minute": False
+}
 
 def formatSeconds(secs):
     if secs > 3600:
+        formatSeconds_branch_coverage["more_than_hour"] = True
         return '%d:%02d:%02d' % (secs // 3600, (secs % 3600) // 60, secs % 60)
     elif secs > 60:
+        formatSeconds_branch_coverage['between_minute_and_hour'] = True
         return '%d:%02d' % (secs // 60, secs % 60)
     else:
+        formatSeconds_branch_coverage['less_than_minute'] = True
         return '%d' % secs
 
 
@@ -3592,15 +3600,25 @@ def unsmuggle_url(smug_url, default=None):
     data = json.loads(jsond)
     return url, data
 
+format_bytes_branch_coverage = {
+    "none_bytes": False,
+    "bytes_is_str": False,
+    "bytes_equal_zero": False,
+    "bytes_not_equal_zero": False
+}
 
 def format_bytes(bytes):
     if bytes is None:
+        format_bytes_branch_coverage['none_bytes'] = True
         return 'N/A'
     if type(bytes) is str:
+        format_bytes_branch_coverage['bytes_is_str'] = True
         bytes = float(bytes)
     if bytes == 0.0:
+        format_bytes_branch_coverage['bytes_equal_zero'] = True
         exponent = 0
     else:
+        format_bytes_branch_coverage['bytes_not_equal_zero'] = True
         exponent = int(math.log(bytes, 1024.0))
     suffix = ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'][exponent]
     converted = float(bytes) / float(1024 ** exponent)
