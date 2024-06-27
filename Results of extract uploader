@@ -1,5 +1,5 @@
 Name                            Stmts   Miss  Cover   Missing
 -------------------------------------------------------------
-test_extract_selected_tab.py          22      6    73%   10-12, 16-19
+test_extract_selected_tab.py          22      6    83%   10-12, 16-19
 -------------------------------------------------------------
-TOTAL                              22      6    73%
+TOTAL                              22      6    83%
