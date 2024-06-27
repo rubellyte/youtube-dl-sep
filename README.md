@@ -53,6 +53,14 @@ Old Coverage Results:
 
 [Instrumentation](https://github.com/rubellyte/youtube-dl-sep/commit/fe2c02649b2105fcf4fe2cfa45de8182aa6f23e4)
 
+#### Matei Mahu
+
+**Function 1: extract_selected_tab**
+[Instrumentation](https://github.com/rubellyte/youtube-dl-sep/blob/master/test/test_extract_selected_tab.py)
+
+**Function 2: extract_uploader**
+[Instrumentation](https://github.com/rubellyte/youtube-dl-sep/blob/master/test/test_extract_uploader.py)
+
 ## Coverage improvement
 
 ### Individual tests
@@ -101,6 +109,14 @@ New Coverage Results:
 
 [New/enhanced test](https://github.com/rubellyte/youtube-dl-sep/commit/4608aad7a7522b296174b4c56d66adfac6fc20ee)
 
+####Matei Mahu
+
+**Test 1: test_extract_uploader**
+[New test](https://github.com/rubellyte/youtube-dl-sep/blob/master/Results%20of%20coverage%20test%20of%20extract%20uploader)
+
+
+**Test 2: test_extract_selected_tab**
+[New test](https://github.com/rubellyte/youtube-dl-sep/blob/master/Results%20of%20extract%20uploader)
 ## Coverage improvement
 
 ### Overall
@@ -111,3 +127,5 @@ New Coverage Results:
 <Write what each group member did>
 
 Nikitas Konstantopoulos: Instrumented the get_suitable_downloader function and created a test for it(improved coverage for the function) and Instrumented the get_base_url function and created a test for it (improved coverage for the function) 
+
+Matei Mahu:Instrumented and made test for extract uploader and extract selected tab
