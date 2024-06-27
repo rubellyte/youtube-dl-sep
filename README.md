@@ -109,7 +109,7 @@ New Coverage Results:
 
 [New/enhanced test](https://github.com/rubellyte/youtube-dl-sep/commit/4608aad7a7522b296174b4c56d66adfac6fc20ee)
 
-####Matei Mahu
+#### Matei Mahu
 
 **Test 1: test_extract_uploader**
 [New test](https://github.com/rubellyte/youtube-dl-sep/blob/master/Results%20of%20coverage%20test%20of%20extract%20uploader)
@@ -121,10 +121,17 @@ New Coverage Results:
 
 ### Overall
 
+Before:
+
+![Coverage report before changes](coverage_before.png)
+
+After:
+
+![Coverage report after changes](coverage_after.png)
 
 ## Statement of individual contributions
 
-<Write what each group member did>
+Jordan Smith: Instrumented and wrote tests for formatSeconds and format_bytes
 
 Nikitas Konstantopoulos: Instrumented the get_suitable_downloader function and created a test for it(improved coverage for the function) and Instrumented the get_base_url function and created a test for it (improved coverage for the function) 
 
